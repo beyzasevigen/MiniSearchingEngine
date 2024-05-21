@@ -1,24 +1,24 @@
 # Mini Desktop Search Engine
 
-Bu proje, Java programlama dilinde "mini masaüstü arama motoru" uygulayan bir programdır. Bu arama motorunun gerçekleştirdiği görev, belgeler koleksiyonundaki seçili belgeleri kullanıcının istediği kelimeler için aramak ve kelimelerin bulunduğu belgelerin listesini ve bu belgelerdeki kelime sayısını döndürmektir. Ayrıca, bu seçili dosyalardan alınan kelimeler ikili arama ağacına eklenir ve kullanıcı, arayüzdeki "order" düğmelerine basarak tüm kelimeleri istediği gibi listeleyebilir.
+This project is a program implementing a "mini desktop search engine" in the Java programming language. The task of this search engine is to search for words that the user wants in a collection of selected documents and return the list of documents where the words are found and the count of those words in these documents. Additionally, words taken from these selected files are added to a binary search tree, and the user can list all the words as desired by pressing the "order" buttons in the interface.
 
-## Tasarım
+## Design
 
-### İkili Arama Ağacı Düğüm Yapısı
+### Binary Search Tree Node Structure
 
-Bir ikili arama ağacı düğüm yapısı aşağıdaki gibidir:
+The structure of a binary search tree node is as follows:
 ![Node Structure](https://github.com/beyzasevigen/MiniSearchingEngine/assets/131770848/9a7ccbc8-64be-4d7d-81f6-8f83e80ae2dd)
 
-BST'deki düğümler yukarıdaki resimde gösterildiği gibi tasarlanmıştır. Bir `bstNode` oluşturulduğunda, şu özelliklerle görünür: sol (left), veri (data, kelime), dosya adlarını ve kelimeye ait sayıları tutan bir bağlı liste (linkedlist) ve sağ (right).
+The nodes in the BST are designed as shown in the image above. When a bstNode is created, it appears with the following properties: left, data (word), a linked list that holds file names and counts related to the word, and right.
 
-### Arama Motorunun Genel Görünümü
+### General View of the Search Engine
 
-Arama motorunun genel görünümü şu şekildedir:
+The general view of the search engine is as follows:
 ![Search Engine Overview](https://github.com/beyzasevigen/MiniSearchingEngine/assets/131770848/ebf1a97d-55be-4a02-89a3-8c07af08431c)
 
-## Proje Çıktısı
+## Project Output
 
-### Örnek Çıktılar
+### Example Outputs
 1)
 ![Output 1](https://github.com/beyzasevigen/MiniSearchingEngine/assets/131770848/2bc48f4f-219f-475e-b8b8-834d5dfae349)
 
